@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    
+}
+main{
+    height: 100vh;
+    
+    background-image: url("images/Untitled\ design.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: black; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: auto;
+    padding: 0px 100px;
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;   
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition-duration: 1s;
+    position: relative;
+    width: max-content;
+    
+}
+a::after{
+    content: '';
+    background: white;
+    padding-top: 2px;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+
+}
+a:hover::after{
+    width: 100%;
+}
+nav h2{
+    color: white;
+    font-weight: 800;
+}
+.cont1{
+    padding: 0px 100px;
+}
+#home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 90vh;
+
+}
+#me{
+    color: #e54b4b;
+}
+#home img{
+    mix-blend-mode: color-burn;
+}
+#home h1{
+    font-size: 72px;
+    color: white;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+p{
+    font-size: 15px;
+    color: #767676;
+    
+}
+#home h5{
+    font-size: 17px;
+    color: white;
+    padding-left: 5px;
+    padding-top: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+#about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+    /* margin: 50px 0px; */
+
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#about p{
+    margin-top: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+#about table p{
+    margin-top: 5px;
+}
+
+.btn{
+    background-color: #e54b4b ;
+    color: white;
+    font-weight: 500;
+    padding: 12px 55px;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color: white ;
+    color: #e54b4b;
+    border: 1px solid #e54b4b;
+    /* font-weight: 500;
+    padding: 12px 55px; */
+}
+#about-content{
+    margin-left: -70px;
+}
+#project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+    background-color: #f9f9f9;
+
+}
+#project h2{
+    margin-bottom: 90px;
+}
+#project #cont2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#project .card{
+    margin: 5px 30px;
+}
+#skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+
+}
+#skills h2, #contact h2{
+    margin-bottom: 100px;
+}
+#skills h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+#skills p, #contact p{
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.percent{
+    display: flex;
+    justify-content: space-between;
+}
+#skills #load{
+    padding-left: 0px;
+}
+#contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+.ans{
+    padding-left: 20px;
+}
+#address{
+    padding-top: 30px;
+}
+#frm{
+    width: 100%;
+    margin-left: -100px;
+}
+input{
+    width: 500px;
+    border: 1px solid #767676;
+}
+textarea{
+    width: 500px;
+    border: 1px solid #767676;
+}
+form button{
+    width: 500px;
+}
+::placeholder{
+    font-size: 15px;
+}
+#ready{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 40vh;
+    background-image: url(https://marketifythemes.net/html/grax//img/patterns/inspiration-geometry.png);
+    background-repeat: repeat;
+    opacity: 1;
+    /* z-index: 2; */
+    background-color: black;
+}
+#ready h2{
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 20vh;
+    background-color: black;
+    color: white;
+}
+.blk{
+    color: black;
+}
+p a{
+    color: #767676;
+}
+.icn{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+#ani{
+    height: 2px;
+    width: 40px;
+    background-color: white;
+    animation-name: line;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes line {
+    0%{
+        position: relative;
+        left: 0px;
+    }
+    100%{
+        position: relative;
+        left: 600px;
+    }
+}
+
+/* @media screen and (max-width:600) {
+    
+} */
