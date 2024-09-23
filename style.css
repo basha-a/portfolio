@@ -49,12 +49,32 @@ a::after{
 a:hover::after{
     width: 100%;
 }
+p a::after, .card a::after{
+    content: '';
+    background: rgb(0, 0, 0);
+    padding-top: 2px;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+
+}
+p a:hover::after,
+.card a:hover::after{
+    width: 100%;
+}
+
 nav h2{
     color: white;
     font-weight: 800;
 }
 .cont1{
     padding: 0px 100px;
+}
+.card a{
+    color: black;
 }
 #home{
     display: flex;
@@ -289,11 +309,12 @@ p a{
     h2{
         font-size: 20px;
     }
-    #about p, #skills p{
+    #about p, #skills p, #contact p{
         font-size: 10px;
         line-height: 15px;
+        padding: 1px 20px;
     }
-    p{
+    p, ::placeholder{
         font-size: 10px;
         line-height: 15px;   
     }
@@ -341,12 +362,7 @@ p a{
     *{
         text-align: center;
     }
-    /* main{
-        height: 50vh;
-    }
-    #home{
-        height: 40vh;
-    } */
+
     #ani{
         animation: none;
     }
@@ -374,6 +390,7 @@ p a{
     input{
         width: 300px;
         border: 1px solid #767676;
+        
     }
     textarea{
         width: 300px;
@@ -386,5 +403,51 @@ p a{
         width: 100%;
         margin-left: 0px;
     }
-    
+    #contact{
+        padding: 30px 20px;
+    }
+    #contact table{
+        margin-left: 40px;
+        text-align: left;
+        padding-top: 0px;
+
+    }
+    .pair{
+        margin-left: 30px;
+    }
+    #sklp{
+        padding: 0px 30px;
+    }
+    #skills h2, #contact h2{
+        margin-bottom: 20px;
+    }
+    #address{
+        padding-top: 0px;
+        text-align: left;
+    }
+    .ans, .blk{
+        margin-bottom: 0px;
+    }
+    #contact .btn{
+        margin-top: 0px;
+    }
+    form{
+        padding: 20px;
+    }
+    footer{
+        display: block;
+        justify-content: center;
+        height: fit-content;
+
+    }
+    .icn{
+        justify-content: center;
+        width: auto;
+    }
+    .icn i{
+        padding: 20px;
+    }
+    .cont1:last-child{
+        padding-bottom: 10px;
+    }
 }
