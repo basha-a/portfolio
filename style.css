@@ -175,7 +175,7 @@ h2{
     display: flex;
     justify-content: space-between;
 }
-#skills #load{
+#load{
     padding-left: 0px;
 }
 #contact{
@@ -244,6 +244,10 @@ p a{
     justify-content: space-between;
     width: 300px;
 }
+#skills .cont1{
+    width: 50%;
+
+}
 #ani{
     height: 2px;
     width: 40px;
@@ -265,6 +269,122 @@ p a{
     }
 }
 
-/* @media screen and (max-width:600) {
+@media screen and (max-width: 600px) 
+{
+    #home h1{
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    #home{
+        width: 100vw;
+    }
+    #home .cont1{
+        padding-right: 0px;
+    }
+    #about img{
+        height: auto;
+        width: 350px;
+        padding: 10px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    #about p, #skills p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    p{
+        font-size: 10px;
+        line-height: 15px;   
+    }
     
-} */
+    #skills{
+        display: inline;
+        height: fit-content;
+        padding: 20px 10px;
+
+    }
+    #skills h3{
+        font-size: 15px;
+    }
+    #skills .w-50{
+        width: 100vw;
+    }
+    #skills .cont1{
+        width: 100vw;
+    }
+    #load{
+        padding: 20px 20px;
+        padding-left: 20px;
+    }
+    .w-50{
+        width: auto;
+    }
+    .pair{
+        width: 80%;
+        text-align: center;
+    }
+    #contact{
+        display: inline;
+    }
+    .cont1{
+        padding: 0px 0px;
+    }
+    #about{
+        display: inline;
+        padding: 20px;
+        height: fit-content;
+    }
+    #about-content{
+        margin-left: 0px;
+    }
+    *{
+        text-align: center;
+    }
+    /* main{
+        height: 50vh;
+    }
+    #home{
+        height: 40vh;
+    } */
+    #ani{
+        animation: none;
+    }
+    .btn{
+        padding: 6px 20px;
+        font-size: 10px;
+
+    }
+    a{
+        font-size: 10px;
+    }
+    #about-content{
+        padding: 20px;
+    }
+    #project{
+        display: block;
+        height: fit-content;
+        padding: 20px 10px;
+    }
+    #ready{
+        display: block;
+        height: fit-content;
+        padding: 50px 20px;
+    }
+    input{
+        width: 300px;
+        border: 1px solid #767676;
+    }
+    textarea{
+        width: 300px;
+        border: 1px solid #767676;
+    }
+    form button{
+        width: 300px;
+    }
+    #frm{
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+}
