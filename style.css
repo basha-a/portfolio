@@ -278,6 +278,9 @@ p a{
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
 }
+#bredcrumb{
+    display: none;
+}
 @keyframes line {
     0%{
         position: relative;
@@ -450,4 +453,26 @@ p a{
     .cont1:last-child{
         padding-bottom: 10px;
     }
+    nav{
+        padding-left: 12px;
+        padding-right: 0px;
+    }
+    #menu>a{
+        display: none;
+    }
+    #bredcrumb{
+        display: flex;
+    }
+    #bredcrumb i{
+        font-size: 20px;
+        padding-left: 70px;
+    }
+    #res-menu
+    {
+        display: block;
+    }
+    #res-menu a{
+        color: black;
+    }
+
 }
