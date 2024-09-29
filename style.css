@@ -19,11 +19,25 @@ nav{
     width: auto;
     padding: 0px 100px;
 }
+.navbar-brand{
+    margin-left: 100px ;
+    margin-right: 100x;
+}
 #menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 30vw;   
+}
+#navbarSupportedContent{
+    position: absolute;
+    right: 100px;
+}
+#navbarSupportedContent a{
+    margin-left: 50px;
+}
+nav a{
+    color: white;
 }
 a{
     text-decoration: none;
@@ -120,6 +134,7 @@ p{
     /* margin: 50px 0px; */
 
 }
+
 h2{
     font-size: 30px;
     font-weight: 700;
@@ -281,6 +296,9 @@ p a{
 #bredcrumb{
     display: none;
 }
+#logo{
+    font-size: 30px;
+}
 @keyframes line {
     0%{
         position: relative;
@@ -293,13 +311,22 @@ p a{
 }
 
 @media screen and (max-width: 600px) 
-{
+{   
+    #ani{
+        display: none;
+    }
+    
     #home h1{
+        margin-top: 200px;
         font-size: 32px;
         letter-spacing: 2px;
+        
     }
     #home{
         width: 100vw;
+        display: inline;
+        justify-content: center;
+        align-items: center;
     }
     #home .cont1{
         padding-right: 0px;
@@ -474,5 +501,19 @@ p a{
     #res-menu a{
         color: black;
     }
+    #logo{
+        font-size: 20px;
+    }
+    .navbar-brand{
+
+    margin-left: 10px ;
+    margin-right: 100x;
+    }
+    .navbar-toggler{
+        background-color: rgba(255, 255, 255, 0.253);
+    }
+    ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    margin-top: 160px;
+}
 
 }
